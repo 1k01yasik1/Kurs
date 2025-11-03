@@ -245,3 +245,4 @@ def run() -> None:
     window.resize(960, 520)
     window.show()
     app.exec_()
+    
