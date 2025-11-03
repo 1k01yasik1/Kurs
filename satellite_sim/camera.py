@@ -1,7 +1,7 @@
 """Camera management utilities."""
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import math
 from typing import Tuple
 
@@ -15,7 +15,7 @@ class Camera:
     distance: float = 6.0
     yaw: float = 0.0
     pitch: float = math.radians(20)
-    target: np.ndarray = np.zeros(3)
+    target: np.ndarray = field(default_factory=lambda: np.zeros(3))
 
     def copy(self) -> "Camera":
         return Camera(self.distance, self.yaw, self.pitch, self.target.copy())
