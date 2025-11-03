@@ -1,5 +1,5 @@
-"""Satellite orbit visualization package."""
+"""Satellite visualisation package."""
 
-from .app import SimulationApp
+from .app import run
 
-__all__ = ["SimulationApp"]
+__all__ = ["run"]

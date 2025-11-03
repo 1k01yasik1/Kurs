@@ -1,12 +1,6 @@
-"""Entry point for the satellite orbit visualiser."""
-
-from satellite_sim import SimulationApp
-
-
-def main() -> None:
-    app = SimulationApp()
-    app.run()
+"""Entry point for the satellite visualisation application."""
+from satellite_sim.app import run
 
 
 if __name__ == "__main__":
-    main()
+    run()
